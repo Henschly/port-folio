@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hen Schel | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+  <div class="container">
+    <a href="#" class="logo">Hen_Schel</a>
+    <ul class="nav-links">
+      <li class="hideOnMobile"><a href="#home">Home</a></li>
+      <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+      <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+      <li class="hideOnMobile"><a href="#about">About</a></li>
+      <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+      <!-- Hamburger Button -->
+      <li class="menu-button">
+        <a href="javascript:void(0);" onclick="showSidebar()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Sidebar -->
+  <ul class="sidebar">
+    <li><a href="javascript:void(0);" onclick="hideSidebar()"><i class="fas fa-times"></i></a></li>
+    <li><a href="#home" onclick="hideSidebar()">Home</a></li>
+    <li><a href="#skills" onclick="hideSidebar()">Skills</a></li>
+    <li><a href="#projects" onclick="hideSidebar()">Projects</a></li>
+    <li><a href="#about" onclick="hideSidebar()">About</a></li>
+    <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Hen Schel</span></h1>
+      <h2>Front-End Web Developer</h2>
+      <p class="subtitle">Building responsive, accessible, and user-friendly websites</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="code-snippet">
+        <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Awesome Portfolio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to my world of code!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, SEO fundamentals</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, responsive design</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, basic algorithms</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <p>Version control, GitHub, collaboration</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach, media queries</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Dev Tools</h3>
+                    <p>Chrome DevTools, VS Code, npm basics</p>
+                </div>
+            </div>
+            <div class="learning">
+                <h3>Currently Learning:</h3>
+                <div class="learning-items">
+                    <span class="learning-item">React</span>
+                    <span class="learning-item">Node.js</span>
+                    <span class="learning-item">TypeScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="E-commerce website screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dog Social Website</h3>
+                        <p>A responsive Social Website for Dogs.</p>
+                        <div class="tech-used">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Weather app screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather information using a public API with location detection.</p>
+                        <div class="tech-used">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Project 3 -->
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Portfolio website screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>A clean, responsive portfolio template for creatives and developers.</p>
+                        <div class="tech-used">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Hen Schel">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                    <p>I'm an aspiring web developer with a passion for creating beautiful, functional websites. My journey into web development began after visiting several websites and noticing how buggy and dysfunctional they were — I knew I could do better.</p>
+                    <p>When I’m not coding, I enjoy writing, researching, or going for a swim. I believe in continuous learning and constantly work on improving my skills through online courses, personal projects, and coding challenges..</p>
+                    <p>My goal is to become a senior full-stack web developer, build solutions that solve real-world problems, and contribute meaningfully to open-source projects.</p>
+                    <a href="https://drive.google.com/file/d/1feEOJusS5Vo5S81s2RKkQwsr9v4w_0LH/view?usp=sharing" class="btn primary" download="EmmanuelKalu_Resume.pdf">
+                        <i class="fas fa-file-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:your.ihenschly@gmail.com"><p><i class="fas fa-envelope"></i> ihenschly@gmail.com</p></a>
+                    <p><i class="fas fa-phone"></i> (+234) 70 312-50005</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/eemmanuelkalu"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xpwlqaag" method="POST">
+
+                        <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+                        <input type="hidden" name="_subject" value="New portfolio message!">
+                        <input type="hidden" name="_gotcha" style="display:none">
+
+                      <div id="form-feedback" aria-live="polite"></div>
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="loading-spinner" aria-hidden="true"></span>
+                        </button>
+                        
+                </form>
+            </div>
+        </div>
+    </section>   
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Built with <i class="fas fa-heart"></i> by Hen Schel</p>
+            <p>&copy; <span id="year"></span> All rights reserved</p>
+        </div>
+    </footer>    
+    <script src="scripts.js"></script>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar').classList.add('active');
+        sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar').classList.remove('active');
+        sidebar.style.display = 'none'
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
